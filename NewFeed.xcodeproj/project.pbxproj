@@ -18,12 +18,14 @@
 		1F4E5FDF2764CC7700FF3FEB /* Storyboard + Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E5FDE2764CC7700FF3FEB /* Storyboard + Instantiate.swift */; };
 		1F4E5FE4276899C100FF3FEB /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E5FE3276899C100FF3FEB /* NewsService.swift */; };
 		1F4E5FE727689C5100FF3FEB /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1F4E5FE627689C5100FF3FEB /* SwiftyJSON */; };
-		1F4E5FEB27689D4000FF3FEB /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E5FEA27689D4000FF3FEB /* Items.swift */; };
+		1F4E5FEB27689D4000FF3FEB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E5FEA27689D4000FF3FEB /* Item.swift */; };
 		1F4E5FED27689D4B00FF3FEB /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E5FEC27689D4B00FF3FEB /* Groups.swift */; };
 		1F4E5FEF27689D5700FF3FEB /* Profiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E5FEE27689D5700FF3FEB /* Profiles.swift */; };
 		1F4E5FF42768B26E00FF3FEB /* PMKFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 1F4E5FF32768B26E00FF3FEB /* PMKFoundation */; };
 		1F4E5FF72768B29000FF3FEB /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1F4E5FF62768B29000FF3FEB /* PromiseKit */; };
 		1F4E5FFA2768BA9300FF3FEB /* Data+PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E5FF92768BA9300FF3FEB /* Data+PrettyJSON.swift */; };
+		1F4E6001276B4D4F00FF3FEB /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E6000276B4D4F00FF3FEB /* NewsViewController.swift */; };
+		1F4E6003276B4D7E00FF3FEB /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4E6002276B4D7E00FF3FEB /* News.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,10 +40,12 @@
 		1F4E5FD92764A9B800FF3FEB /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		1F4E5FDE2764CC7700FF3FEB /* Storyboard + Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard + Instantiate.swift"; sourceTree = "<group>"; };
 		1F4E5FE3276899C100FF3FEB /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
-		1F4E5FEA27689D4000FF3FEB /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		1F4E5FEA27689D4000FF3FEB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1F4E5FEC27689D4B00FF3FEB /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
 		1F4E5FEE27689D5700FF3FEB /* Profiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profiles.swift; sourceTree = "<group>"; };
 		1F4E5FF92768BA9300FF3FEB /* Data+PrettyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+PrettyJSON.swift"; sourceTree = "<group>"; };
+		1F4E6000276B4D4F00FF3FEB /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		1F4E6002276B4D7E00FF3FEB /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,15 +82,16 @@
 		1F4E5FBE276378A400FF3FEB /* NewFeed */ = {
 			isa = PBXGroup;
 			children = (
+				1F4E5FC5276378A400FF3FEB /* Main.storyboard */,
+				1F4E6002276B4D7E00FF3FEB /* News.storyboard */,
 				1F4E5FBF276378A400FF3FEB /* AppDelegate.swift */,
 				1F4E5FC1276378A400FF3FEB /* SceneDelegate.swift */,
 				1F4E5FC3276378A400FF3FEB /* LoginViewController.swift */,
-				1F4E5FDE2764CC7700FF3FEB /* Storyboard + Instantiate.swift */,
-				1F4E5FF02768A06400FF3FEB /* Session */,
+				1F4E6000276B4D4F00FF3FEB /* NewsViewController.swift */,
 				1F4E5FE927689D1F00FF3FEB /* Services */,
-				1F4E5FF82768BA6700FF3FEB /* Extensions */,
 				1F4E5FE827689D1800FF3FEB /* Models */,
-				1F4E5FC5276378A400FF3FEB /* Main.storyboard */,
+				1F4E5FF02768A06400FF3FEB /* Session */,
+				1F4E5FF82768BA6700FF3FEB /* Extensions */,
 				1F4E5FC8276378A800FF3FEB /* Assets.xcassets */,
 				1F4E5FCA276378A800FF3FEB /* LaunchScreen.storyboard */,
 				1F4E5FCD276378A800FF3FEB /* Info.plist */,
@@ -97,7 +102,7 @@
 		1F4E5FE827689D1800FF3FEB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1F4E5FEA27689D4000FF3FEB /* Items.swift */,
+				1F4E5FEA27689D4000FF3FEB /* Item.swift */,
 				1F4E5FEC27689D4B00FF3FEB /* Groups.swift */,
 				1F4E5FEE27689D5700FF3FEB /* Profiles.swift */,
 			);
@@ -123,6 +128,7 @@
 		1F4E5FF82768BA6700FF3FEB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1F4E5FDE2764CC7700FF3FEB /* Storyboard + Instantiate.swift */,
 				1F4E5FF92768BA9300FF3FEB /* Data+PrettyJSON.swift */,
 			);
 			path = Extensions;
@@ -201,6 +207,7 @@
 				1F4E5FCC276378A800FF3FEB /* LaunchScreen.storyboard in Resources */,
 				1F4E5FC9276378A800FF3FEB /* Assets.xcassets in Resources */,
 				1F4E5FC7276378A400FF3FEB /* Main.storyboard in Resources */,
+				1F4E6003276B4D7E00FF3FEB /* News.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +222,8 @@
 				1F4E5FDA2764A9B800FF3FEB /* Session.swift in Sources */,
 				1F4E5FC4276378A400FF3FEB /* LoginViewController.swift in Sources */,
 				1F4E5FC0276378A400FF3FEB /* AppDelegate.swift in Sources */,
-				1F4E5FEB27689D4000FF3FEB /* Items.swift in Sources */,
+				1F4E6001276B4D4F00FF3FEB /* NewsViewController.swift in Sources */,
+				1F4E5FEB27689D4000FF3FEB /* Item.swift in Sources */,
 				1F4E5FFA2768BA9300FF3FEB /* Data+PrettyJSON.swift in Sources */,
 				1F4E5FC2276378A400FF3FEB /* SceneDelegate.swift in Sources */,
 				1F4E5FEF27689D5700FF3FEB /* Profiles.swift in Sources */,

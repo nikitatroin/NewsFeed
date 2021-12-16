@@ -14,8 +14,7 @@ extension UIStoryboard {
     
     enum Name: String {
         case main   = "Main"
-        case launch = "LaunchScreen"
-        case other  = "Other"
+        case news   = "News"
     }
     
     convenience init(_ name: Name, bundle: Bundle? = nil) {

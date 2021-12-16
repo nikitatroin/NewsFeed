@@ -67,6 +67,10 @@ class LoginViewController: UIViewController, WKNavigationDelegate {
         Session.shared.userId = userId
         Session.shared.token = token
         
+        let newsVC = UIStoryboard(.news).instantiate(NewsViewController.self)
+        newsVC.modalPresentationStyle = .fullScreen
+        self.present(newsVC, animated: true, completion: nil)
+        
         decisionHandler(.cancel)
     }
 }
